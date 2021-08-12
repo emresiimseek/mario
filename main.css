@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.line {
+    background-color: white;
+    height: 20px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.road {
+    background-color: gray;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 300px;
+
+}
+
+.mario {
+    animation-name: drive;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+
+.mario2 {
+    top: -70px;
+    position: absolute;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+
+@keyframes drive {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(1700px)
+    }
+}
